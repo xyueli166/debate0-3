@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/index",
+      "dest": "/api/index.mjs"
+    },
+    {
+      "src": "/api/services/openai",
+      "dest": "/api/services/openai.service.mjs"
+    },
+    {
+      "src": "/api/services/rateLimit",
+      "dest": "/api/services/rateLimit.service.mjs"
+    },
+    {
+      "src": "/api/services/search",
+      "dest": "/api/services/search.service.mjs"
+    },
+    {
+      "src": "/api/services/translate",
+      "dest": "/api/services/translate.service.mjs"
+    }
+  ],
+  "functions": {
+    "api/index.mjs": {
+      "maxDuration": 60
+    },
+    "api/services/openai.service.mjs": {
+      "maxDuration": 60
+    },
+    "api/services/rateLimit.service.mjs": {
+      "maxDuration": 60
+    },
+    "api/services/search.service.mjs": {
+      "maxDuration": 60
+    },
+    "api/services/translate.service.mjs": {
+      "maxDuration": 60
+    }
+  }
+}
